@@ -14,3 +14,30 @@
     transform: translate(-50%, -50%);
   color: white;
 }
+
+.promo {
+  display: flex;          
+  align-items: center;     
+  gap: 40px;
+}
+
+.deskripsi {
+  text-align: left;
+  padding-left: 30px;
+}
+.gambarp {
+  margin-left: 200px;
+  margin-top: 60px;
+}
+
+.gambarp img {
+  width: 400px;
+}
+
+.page3 {
+  background-color: #ede9df;
+  margin-top: 100px;
+  padding: 60px 0;
+  border-top: 1px solid #d8d3c5;
+  border-bottom: 1px solid #d8d3c5;
+}
