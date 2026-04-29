@@ -16,6 +16,7 @@
   color: white;
 }
 
+<<<<<<< HEAD
 .kolom-makanan{
   text-align: start;
   margin-top: 50px;
@@ -54,3 +55,184 @@
   font-weight: bold;
   font-size: 16px;
 }
+=======
+.promo {
+  color: #5c4a2d;
+  display: flex;          
+  align-items: center;     
+  gap: 40px;
+}
+
+.deskripsi {
+  text-align: left;
+  padding-left: 30px;
+}
+.gambarp {
+  margin-left: 200px;
+  margin-top: 60px;
+}
+
+.gambarp img {
+  width: 400px;
+}
+
+.card-promo {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.page3 {
+  color: #5c4a2d;
+  background-color: #ede9df;
+  margin-top: 100px;
+  padding: 60px 0;
+  border-top: 1px solid #d8d3c5;
+  border-bottom: 1px solid #d8d3c5;
+}
+
+.page3 h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.page3 p {
+  font-size: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.footer {
+  background-color: #ede9df;
+  margin-top: 100px;
+  padding: 10px 0;
+  color: #5c4a2d;
+}
+
+.footer .merk {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.footer h6 {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.footer ul li {
+  margin-bottom: 4px;
+}
+
+.footer ul li:hover {
+  color: #d97742;
+}
+
+.footer hr {
+  margin: 10px 0;
+  border-color: #d8d3c5;
+}
+
+.events .row {
+  display: flex;
+  align-items: flex-start; 
+}
+
+.foto {
+  flex: 1;
+}
+
+.foto img {
+  width: 100%;
+  height: auto;
+  margin-top: 2cm;
+}
+
+.teks {
+  margin-top: 2cm;
+  margin-left: 20px;
+  flex: 1;
+  text-align: left;
+}
+
+.teks h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 500;
+  color: #3e3e3e;
+  margin-bottom: 20px;
+}
+
+.teks p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #6b6b6b;
+  margin-bottom: 15px;
+}
+
+.foto2 {
+  flex: 1;
+}
+
+.foto2 img {
+  width: 100%;
+  height: auto;
+  margin-top: 2cm;
+}
+
+.teks2 {
+  margin-top: 2cm;
+  flex: 1;
+  margin-right: 20px;
+  text-align: right;
+}
+
+.teks2 h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 500;
+  color: #3e3e3e;
+  margin-bottom: 20px;
+}
+
+.events1 .row {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.events2 .row {
+  display: flex;
+  align-items: flex-start; 
+}
+
+.foto3 {
+  flex: 1;
+}
+
+.foto3 img {
+  width: 100%;
+  height: auto;
+  margin-top: 2cm;
+}
+
+.teks3 {
+  margin-top: 2cm;
+  margin-left: 20px;
+  flex: 1;
+  text-align: left;
+}
+
+.teks3 h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.card-menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+>>>>>>> 60ed29569893a36ff968fc61480106409b87541b
