@@ -1,3 +1,7 @@
+.body{
+  font-family: 'poppins', 'sans-serif';
+}
+
 .hero-image {
   background-image: url(tumbnail.jpg); 
   min-height: 100vh; /* ganti ini */
@@ -16,7 +20,6 @@
   color: white;
 }
 
-<<<<<<< HEAD
 .kolom-makanan{
   text-align: start;
   margin-top: 50px;
@@ -48,14 +51,32 @@
 
 .lokasi {
   display: block;
-  width: 380px;          /* bikin panjang */       /* biar responsive */
-  margin: 10px auto;     /* auto = tengah */
+  width: 380px;          
+  margin: 10px auto;    
   padding: 15px;
-  border-radius: 50px;   /* super tumpul */
+  border-radius: 50px;   
   font-weight: bold;
   font-size: 16px;
 }
-=======
+
+.login{
+  display: block;
+  background-color: #d8d3c5;
+  width: 380px;          
+  margin: 45px auto;    
+  padding: 15px;
+  border-radius: 10px; 
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.submit{
+  margin : 10px auto;
+  background-color: black;
+  width: 300px;
+  border-radius: 10px;
+}
+
 .promo {
   color: #5c4a2d;
   display: flex;          
@@ -235,4 +256,3 @@
   margin-top: 30px;
 }
 
->>>>>>> 60ed29569893a36ff968fc61480106409b87541b
