@@ -28,7 +28,7 @@ if (mysqli_num_rows($result) > 0) {
         $_SESSION['logged_in'] = true;
         $_SESSION['is_admin'] = false;
         echo "Login berhasil.";
-        header('Location: halo.php');
+        header('Location: index.php');
         exit();
     } 
     
@@ -37,3 +37,5 @@ if (mysqli_num_rows($result) > 0) {
     header('Location: index.php');
     exit();
 }
+
+?>
