@@ -2,40 +2,34 @@
 session_start();
 include 'koneksi.php';
 
-$nama = $_POST['nama'];
+$username = $_POST['username'];
 $password = $_POST['password'];
-$query = "SELECT * FROM users WHERE username='$nama' AND password='$password'";
 
-$result = mysqli_query($koneksi, $query);
+$query = mysqli_query($koneksi, 
+"SELECT * FROM users WHERE username='$username' AND password='$password'"
+);
 
-if (mysqli_num_rows($result) > 0) {
-    $user = mysqli_fetch_assoc($result);
-    $_SESSION['user_email'] = $user['email'];
+$user = mysqli_fetch_assoc($query);
+
+if ($user) {
+
     $_SESSION['user_id'] = $user['id'];
-    $_SESSION['user_name'] = $user['name'];
+    $_SESSION['user_name'] = $user['username'];
     $_SESSION['user_role'] = $user['role'];
+    $_SESSION['logged_in'] = true;
 
-
-    if ($user['role'] === 'admin') {
-        $_SESSION['logged_in'] = true;
+    if ($user['role'] == 'admin') {
         $_SESSION['is_admin'] = true;
-        echo "login berhasil";
-        header('Location: dashboardAdmin.php');
-        exit();
-    } 
-    
-    else {
-        $_SESSION['logged_in'] = true;
+        header("Location: dashboardAdmin.php");
+    } else {
         $_SESSION['is_admin'] = false;
-        echo "Login berhasil.";
-        header('Location: index.php');
-        exit();
-    } 
-    
+        header("Location: booking.php");
+    }
+    exit();
+
 } else {
-    $_SESSION['login_error'] = "Email atau password salah. Silakan coba lagi.";
-    header('Location: index.php');
+    $_SESSION['login_error'] = "Username atau password salah";
+    header("Location: login.php");
     exit();
 }
-
 ?>
