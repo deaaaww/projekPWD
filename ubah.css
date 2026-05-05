@@ -77,11 +77,17 @@
   border-radius: 10px;
 }
 
+.proomo {
+  background-color: #ede9df;
+   padding-bottom: 6%;
+}
+
 .promo {
   color: #5c4a2d;
   display: flex;          
   align-items: center;     
   gap: 40px;
+  margin-bottom: 40px;
 }
 
 .deskripsi {
@@ -100,7 +106,7 @@
 .card-promo {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 60px;
   flex-wrap: wrap;
   margin-top: 30px;
 }
@@ -108,10 +114,10 @@
 .page3 {
   color: #5c4a2d;
   background-color: #ede9df;
-  margin-top: 100px;
-  padding: 60px 0;
-  border-top: 1px solid #d8d3c5;
-  border-bottom: 1px solid #d8d3c5;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding: 40px 0;
+  padding-bottom: 30px;
 }
 
 .page3 h1 {
@@ -123,10 +129,10 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .footer {
-  background-color: #ede9df;
-  margin-top: 100px;
+  background-color: #6a500a;
+  margin-top: 60px;
   padding: 10px 0;
-  color: #5c4a2d;
+  color: #eeebe5;
 }
 
 .footer .merk {
@@ -248,6 +254,10 @@
   margin-bottom: 20px;
 }
 
+.menu  {
+  padding-bottom: 60px;
+}
+
 .card-menu {
   display: flex;
   justify-content: center;
@@ -256,6 +266,20 @@
   margin-top: 30px;
 }
 
+<<<<<<< HEAD
+=======
+.card {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+<<<<<<< HEAD
+>>>>>>> f3f40c5705c3ed2f5e70cfa3eb5af0a41dbac3f2
 .card img {
   height: 300px;        
   object-fit: cover;   
@@ -328,7 +352,7 @@
 .tentang {
   padding-top: 40px;
   padding-bottom: 40px;
-  margin-top: 13px;
+  margin-top: 50px;
 }
 
 .tentang p {
