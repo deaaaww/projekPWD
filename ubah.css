@@ -27,7 +27,7 @@
 }
 
 .kolom-gambar img {
-  width: 5500px;
+  width: 100%
   height: auto;
   margin-top: 15px;
   margin-bottom: 60px;
@@ -360,5 +360,68 @@
  padding-right: 60px;
 }
 
+.cardd {
+  margin-top: 30px;
+  border-radius: 16px;
+  border: none;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
 
+/* HEADER */
+.card-header {
+  background: none;
+  border-bottom: none;
+  text-align: center;
+}
+
+.card-header h5 {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.card-header p {
+  font-size: 14px;
+  color: #777;
+}
+
+/* ==== INPUT ==== */
+.form-control {
+  border-radius: 10px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+/* efek pas diklik */
+.form-control:focus {
+  border-color: #6a500a;
+  box-shadow: 0 0 0 2px rgba(106,80,10,0.15);
+}
+
+/* ==== BUTTON ==== */
+.btn-success {
+  background-color: #6a500a;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn-success:hover {
+  background-color: #4e3a07;
+  transform: translateY(-2px);
+}
+
+/* ==== LINK ==== */
+a {
+  color: #6a500a;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* ==== ERROR ==== */
+.text-danger {
+  font-size: 13px;
+}
 

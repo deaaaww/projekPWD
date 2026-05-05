@@ -10,7 +10,7 @@
 
 <body>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #6a500a;">
   <div class="container-fluid">
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
@@ -46,7 +46,7 @@
       </ul>
 
       <div class="mx-auto">
-        <img src="logo.png" alt="Logo" width="80" class="d-block">
+        <img src="photo/logo.png" alt="Logo" width="80" class="d-block">
       </div>
 
       <ul class="navbar-nav ms-auto align-items-center">
@@ -64,7 +64,7 @@
 </nav>
 
 <div class="d-flex justify-content-center mt-4">
-  <div class="card p-3" style="width:400px;">
+  <div class="cardd p-3" style="width:400px;">
     
     <div class="card-header">
       <h5>Registrasi Pengguna Baru</h5>
