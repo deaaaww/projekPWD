@@ -256,13 +256,10 @@
   margin-top: 30px;
 }
 
-<<<<<<< HEAD
 .card img {
   height: 300px;        
   object-fit: cover;   
 }
-
-
 .about {
   display: flex;
   align-items: center;
@@ -341,6 +338,5 @@
  padding-right: 60px;
 }
 
->>>>>>> 60ed29569893a36ff968fc61480106409b87541b
-=======
->>>>>>> 633e956c681a9b9a340500182c13a1677e5e3a21
+
+
