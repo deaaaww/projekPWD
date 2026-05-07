@@ -23,9 +23,9 @@ $query = "INSERT INTO reservasi (id_user, jumlah_orang, tanggal, jam)
           VALUES ('$id_user', '$jumlah', '$tanggal', '$jam')";
 
 if (mysqli_query($koneksi, $query)) {
-    header("Location: index.php");
+    header("Location: berhasil.php");
     exit();
 } else {
-    echo "Gagal reservasi";
+    die(mysqli_error($koneksi));
 }
 ?>

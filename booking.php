@@ -21,7 +21,7 @@ if (!isset($_SESSION['user_id'])) {
 
 <h3>Form Reservasi</h3>
 
-<form action="proses_reservasi.php" method="POST">
+<form action="otwBooking.php" method="POST">
 
   <div class="mb-3">
     <label>Jumlah Orang</label>

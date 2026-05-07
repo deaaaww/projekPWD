@@ -26,7 +26,7 @@ if (mysqli_num_rows($cek) > 0) {
 $query = mysqli_query($koneksi,
 "INSERT INTO users (username, email, password, role) 
 VALUES ('$nama', '$email', '$password', 'user')"
-);
+) or die(mysqli_error($koneksi));
 
 if ($query) {
 

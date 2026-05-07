@@ -14,6 +14,12 @@
 
 <h3 class="text-center">Login</h3>
 
+<?php if(isset($_SESSION['error'])): ?>
+<div class="alert alert-warning">
+  <?= $_SESSION['error']; unset($_SESSION['error']); ?>
+</div>
+<?php endif; ?>
+
 <?php if(isset($_SESSION['login_error'])): ?>
 <div class="alert alert-danger">
   <?= $_SESSION['login_error']; unset($_SESSION['login_error']); ?>
