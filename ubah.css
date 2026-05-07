@@ -3,7 +3,7 @@
 }
 
 .hero-image {
-  background-image: url(tumbnail.jpg); 
+  background-image: url(photo/aa.jpg); 
   min-height: 100vh; /* ganti ini */
   background-size: cover;
   background-position: center;
@@ -12,12 +12,13 @@
 }
 
 .hero-text {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   position: absolute;
   text-align: center;
   top: 50%;
   left: 50%;
-    transform: translate(-50%, -50%);
-  color: white;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 234, 76);
 }
 
 .kolom-makanan{
@@ -266,9 +267,6 @@
   margin-top: 30px;
 }
 
-
-
-
 .card {
     transition: 0.3s;
     cursor: pointer;
@@ -393,7 +391,6 @@ padding-right: 60px;
   transition: all 0.3s ease;
 }
 
-/* efek pas diklik */
 .form-control:focus {
   border-color: #6a500a;
   box-shadow: 0 0 0 2px rgba(106,80,10,0.15);
@@ -406,22 +403,17 @@ padding-right: 60px;
   border-radius: 10px;
   padding: 12px;
   font-weight: 500;
-  transition: 0.3s;
 }
 
 .btn-success:hover {
   background-color: #4e3a07;
-  transform: translateY(-2px);
 }
 
-/* ==== LINK ==== */
 a {
   color: #6a500a;
   font-weight: 500;
-  text-decoration: none;
 }
 
-/* ==== ERROR ==== */
 .text-danger {
   font-size: 13px;
 }
