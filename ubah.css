@@ -3,8 +3,8 @@
 }
 
 .hero-image {
-  background-image: url(photo/aa.jpg); 
-  min-height: 100vh; /* ganti ini */
+  background-image: url(photo/thumm.jpg); 
+  min-height: 100vh; 
   background-size: cover;
   background-position: center;
   position: relative;
@@ -18,7 +18,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: rgb(255, 234, 76);
+  color: rgb(255, 235, 164);
 }
 
 .kolom-makanan{
@@ -32,12 +32,12 @@
   height: auto;
   margin-top: 15px;
   margin-bottom: 60px;
-  margin-left: 30px; /* ini yang bikin geser ke kanan */
+  margin-left: 30px; 
   border-radius: 10px;
 }
 
 .hero{
-  background-image: url(tumbnail.jpg); 
+  background-image: url(photo/thumm.jpg); 
   min-height: 100vh; 
   background-size: cover;
   background-position: center;
@@ -383,7 +383,6 @@ padding-right: 60px;
   color: #777;
 }
 
-/* ==== INPUT ==== */
 .form-control {
   border-radius: 10px;
   padding: 12px;
@@ -396,7 +395,6 @@ padding-right: 60px;
   box-shadow: 0 0 0 2px rgba(106,80,10,0.15);
 }
 
-/* ==== BUTTON ==== */
 .btn-success {
   background-color: #6a500a;
   border: none;

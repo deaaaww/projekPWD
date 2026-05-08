@@ -84,7 +84,6 @@
   <div class="mb-3">
     <label>Username</label>
     <input type="text" name="username" class="form-control" required>
-=======
     <form action="otwLogin.php" method="POST">
         <div class="mb-3">
           <label>Username</label>
@@ -96,7 +95,6 @@
         <button class="btn btn-success w-100">Login</button>
     </form>
 <p class="text-center mt-3">Belum punya akun? <a href="daftar.php">Daftar</a></p>
->>>>>>> 0125f55a7945992e54f2f249aefeec7f135a8d95
   </div>
     </div>
       </body>
