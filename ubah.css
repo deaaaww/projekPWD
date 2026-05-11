@@ -366,7 +366,6 @@ padding-right: 60px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
-/* HEADER */
 .card-header {
   background: none;
   border-bottom: none;
@@ -383,7 +382,6 @@ padding-right: 60px;
   color: #777;
 }
 
-/* ==== INPUT ==== */
 .form-control {
   border-radius: 10px;
   padding: 12px;
@@ -396,7 +394,7 @@ padding-right: 60px;
   box-shadow: 0 0 0 2px rgba(106,80,10,0.15);
 }
 
-/* ==== BUTTON ==== */
+
 .btn-success {
   background-color: #6a500a;
   border: none;
@@ -418,3 +416,23 @@ a {
   font-size: 13px;
 }
 
+.booking-card{
+    width: 450px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.booking-wrapper{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-control,
+.form-select{
+    height: 45px;
+    border-radius: 10px;
+}
