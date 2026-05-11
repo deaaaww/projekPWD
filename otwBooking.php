@@ -2,7 +2,7 @@
 session_start();
 include 'koneksi.php';
 
-// cek login
+
 if (!isset($_SESSION['user_id'])) {
     header("Location: login.php");
     exit();
@@ -13,7 +13,7 @@ $jumlah = $_POST['jumlah_orang'];
 $tanggal = $_POST['tanggal'];
 $jam = $_POST['jam'];
 
-// validasi sederhana
+
 if (empty($jumlah) || empty($tanggal) || empty($jam)) {
     echo "Data tidak boleh kosong";
     exit();

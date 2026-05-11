@@ -59,32 +59,6 @@
     </div>
     <?php endif; ?>
 
-<<<<<<< HEAD
-<body class="bg-light">
-
-<div class="container mt-5">
-<div class="card p-4 mx-auto" style="max-width:400px;">
-
-<h3 class="text-center">Login</h3>
-
-<?php if(isset($_SESSION['error'])): ?>
-<div class="alert alert-warning">
-  <?= $_SESSION['error']; unset($_SESSION['error']); ?>
-</div>
-<?php endif; ?>
-
-<?php if(isset($_SESSION['login_error'])): ?>
-<div class="alert alert-danger">
-  <?= $_SESSION['login_error']; unset($_SESSION['login_error']); ?>
-</div>
-<?php endif; ?>
-
-<form action="otwLogin.php" method="POST">
-
-  <div class="mb-3">
-    <label>Username</label>
-    <input type="text" name="username" class="form-control" required>
-=======
     <form action="otwLogin.php" method="POST">
         <div class="mb-3">
           <label>Username</label>
@@ -96,7 +70,6 @@
         <button class="btn btn-success w-100">Login</button>
     </form>
 <p class="text-center mt-3">Belum punya akun? <a href="daftar.php">Daftar</a></p>
->>>>>>> 0125f55a7945992e54f2f249aefeec7f135a8d95
   </div>
     </div>
       </body>
