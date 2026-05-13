@@ -87,8 +87,7 @@ session_start();
           <?php } ?>
         </div>
         <button type="submit" class="btn btn-success w-100">Daftar</button>
-        <p class="text-center mt-2">
-          Sudah punya akun? <a href="login.php">Masuk</a></p>
+          <p class="text-center mt-2">Sudah punya akun? <a href="login.php">Masuk</a></p>
       </form>
     </div>
   </div>

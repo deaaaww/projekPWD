@@ -1,13 +1,41 @@
 <?php
+session_start();
 include 'koneksi.php';
-$id = $_GET['id'];
-$query = "DELETE FROM reservasi WHERE id='$id'";
-$result = mysqli_query($koneksi, $query);
-if($result){
-    echo "Reservasi berhasil dihapus!";
-    header('location: dashboardAdmin.php');
+
+if($_SESSION['user_role'] != 'admin'){
+    header("Location: login.php");
     exit();
 }
-else{
-    echo "Gagal menghapus reservasi: " . mysqli_error($koneksi);
+
+$id = $_GET['id'];
+
+
+$ambil = mysqli_query(
+    $koneksi,
+    "SELECT * FROM menu WHERE id_menu='$id'"
+);
+
+$data = mysqli_fetch_assoc($ambil);
+
+
+if($data['foto']){
+    unlink($data['foto']);
 }
+
+
+$hapus = mysqli_query(
+    $koneksi,
+    "DELETE FROM menu WHERE id_menu='$id'"
+);
+
+if($hapus){
+
+    header("Location: dashboardAdmin.php");
+    exit();
+
+} else {
+
+    echo "Gagal hapus menu";
+
+}
+?>

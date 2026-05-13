@@ -1,10 +1,13 @@
 <?php
 session_start();
+include 'koneksi.php';
 
 if (!isset($_SESSION['user_id'])) {
     header("Location: login.php");
     exit();
 }
+
+$menu = mysqli_query($koneksi, "SELECT * FROM menu");
 ?>
 
 <!DOCTYPE html>
@@ -92,8 +95,21 @@ if (!isset($_SESSION['user_id'])) {
                     <option>15:30</option>
                 </select>
             </div>
-            <button type="submit" class="btn btn-dark w-100">Reservasi
-            </button>
+            <div class="mb-3">
+    <label class="form-label">Menu Pesanan</label>
+    <div class="mb-3">
+    <select name="id_menu" class="form-select" required>
+        <option value="">-- Pilih Menu --</option>
+        <?php while($data = mysqli_fetch_assoc($menu)) { ?>
+            <option value="<?= $data['id_menu']; ?>">
+                <?= $data['nama_menu']; ?> -
+                Rp<?= number_format($data['harga']); ?>
+            </option>
+        <?php } ?>
+    </select>
+</div>
+</div>
+            <button type="submit" class="btn btn-dark w-100">Reservasi</button>
         </form>
     </div>
 </div>
