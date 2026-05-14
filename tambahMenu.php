@@ -115,30 +115,15 @@ if(isset($_POST['simpan'])){
 
             <div class="mb-4">
 
-                <label class="form-label">
-                    Foto Menu
+                <label class="form-label">Foto Menu
                 </label>
 
-                <input type="file"
-                       name="foto"
-                       class="form-control"
-                       required>
-
+                <input type="file" name="foto"
+                       class="form-control" required>
             </div>
-
-            <button type="submit"
-                    name="simpan"
-                    class="btn btn-dark w-100">
-
-                Tambah Menu
-
-            </button>
-
+            <button type="submit"name="simpan" class="btn btn-dark w-100">Tambah Menu</button>
         </form>
-
     </div>
-
 </div>
-
 </body>
 </html>
